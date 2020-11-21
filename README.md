@@ -14,3 +14,6 @@
 имена констант - CAPITAL_SNAKE_CASE - существительное, описывает суть хранимых данных
 
 имена файлов - cebab-case
+
+## Макет
+https://www.figma.com/file/8zOB69qq7kcADjbNmGvQ7D/denim?node-id=0%3A1
