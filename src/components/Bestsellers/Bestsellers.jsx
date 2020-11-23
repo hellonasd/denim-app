@@ -2,6 +2,7 @@ import React from "react";
 import { Products } from "../Products/Products";
 import { mocoData } from "../../moco-data/mocoData.js";
 import Styles from "./Styles.module.css";
+import { Viewall } from "../viewall/Viewall";
 export const Bestsellers = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ export const Bestsellers = () => {
             modelPrice={el.price}
           />
         ))}
+        <Viewall />
       </div>
     </div>
   );

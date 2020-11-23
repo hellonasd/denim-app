@@ -1,14 +1,17 @@
-.img{
+.img {
   width: 125px;
   height: 160px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.items__model{
+.items__model {
   list-style: none;
   padding-left: 13px;
   padding-right: 13px;
 }
-p{
-  
+p {
+  font-size: 16px;
+  line-height: 19px;
   padding-left: 13px;
   margin: 0px;
 }
