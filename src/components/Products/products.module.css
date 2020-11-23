@@ -1,7 +1,14 @@
 .img{
-  
+  width: 125px;
+  height: 160px;
 }
-.products__wrapper{
-  display: flex;
-  flex-direction: column;
+.items__model{
+  list-style: none;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+p{
+  
+  padding-left: 13px;
+  margin: 0px;
 }

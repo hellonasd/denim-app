@@ -3,12 +3,13 @@ import { mocoData } from "../../moco-data/mocoData.js";
 import products from "../Products/products.module.css";
 
 export const Products = ({ imgElem, nameModel, modelPrice }) => {
-  console.log(mocoData[0].mobileUrl);
   return (
     <div className={products.products__wrapper}>
-      <img className={products.img} src={imgElem} />
-      <span>{nameModel}</span>
-      <span>{modelPrice}</span>
+      <li className={products.items__model}>
+        <img className={products.img} src={imgElem} />
+      </li>
+      <p>{nameModel}</p>
+      <p>{modelPrice}</p>
     </div>
   );
 };
