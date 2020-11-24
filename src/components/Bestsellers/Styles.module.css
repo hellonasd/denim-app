@@ -8,9 +8,21 @@
     line-height: 30px;
     display: flex;
     align-items: center;
+    
 }
 
 .wrap{
     display: flex;
     flex-wrap: wrap;
+    
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+}
+
+
+@media (max-width : 768px){
+    .wrap{
+        width: 400px;
+    }
 }

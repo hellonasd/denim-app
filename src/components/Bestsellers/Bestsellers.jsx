@@ -11,7 +11,8 @@ export const Bestsellers = () => {
         {mocoData.map((el, i) => (
           <Products
             key={i}
-            imgElem={el.mobileUrl}
+            imgElemMobile={el.mobileUrl}
+            imgElemTable={el.tableUrl}
             nameModel={el.name}
             modelPrice={el.price}
           />

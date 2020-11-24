@@ -5,7 +5,8 @@ export const mocoData = [
     category : '',
     color : [],
     size : [],
-    mobileUrl : `../../img/model-1.jpg`
+    mobileUrl : `../../img/model-1.jpg`,
+    tableUrl : `../../img/table-model-1.jpg`,
   },
   {
     name : 'Overalls',
@@ -13,7 +14,8 @@ export const mocoData = [
     category : '',
     color : [],
     size : [],
-    mobileUrl : `../../img/model-2.jpg`
+    mobileUrl : `../../img/model-2.jpg`,
+    tableUrl : `../../img/table-model-2.jpg`,
   },
   {
     name : 'Jacket',
@@ -21,7 +23,8 @@ export const mocoData = [
     category : '',
     color : [],
     size : [],
-    mobileUrl : `../../img/model-3.jpg`
+    mobileUrl : `../../img/model-3.jpg`,
+    tableUrl : `../../img/table-model-3.jpg`,
   },
   {
     name : 'Overalls',
@@ -29,6 +32,7 @@ export const mocoData = [
     category : '',
     color : [],
     size : [],
-    mobileUrl : `../../img/model-4.jpg`
+    mobileUrl : `../../img/model-4.jpg`,
+    tableUrl : `../../img/table-model-4.jpg`,
   }
 ]
