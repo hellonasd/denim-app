@@ -9,15 +9,14 @@
   border-bottom: 2px solid black;
   height: 24px;
   position: absolute;
-  top: 555px;
-  left: 176px;
+  display: block;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .link {
     position: absolute;
-    top: 25px;
-    left: 670px
+    top: 555px;
+    left: 176px
   }
 }
 
