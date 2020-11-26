@@ -6,10 +6,9 @@ import { Viewall } from "../viewall/Viewall";
 export const Bestsellers = () => {
   return (
     <div className={Styles.best__wrapp}>
-      <div>
+      <div className={Styles.best__wrapp_vi}>
       <h4 className={Styles.title}>Bestsellers</h4>
         <Viewall />
-
       </div>
       <div className={Styles.wrap}>
         {mocoData.map((el, i) => (

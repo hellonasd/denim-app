@@ -1,6 +1,6 @@
 
 .title {
-    padding-left: 53px;
+    margin-left: 45px;
     font-family: Work Sans;
     font-style: normal;
     font-weight: bold;
@@ -25,6 +25,20 @@
 @media (max-width : 768px){
     .wrap{
         width: 400px;
+    }
+    .best__wrapp_vi{
+    }
+    .title {
+        margin-left: 55px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+    
+        
     }
 }
 
