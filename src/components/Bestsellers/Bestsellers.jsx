@@ -5,8 +5,12 @@ import Styles from "./Styles.module.css";
 import { Viewall } from "../viewall/Viewall";
 export const Bestsellers = () => {
   return (
-    <div>
+    <div className={Styles.best__wrapp}>
+      <div>
       <h4 className={Styles.title}>Bestsellers</h4>
+        <Viewall />
+
+      </div>
       <div className={Styles.wrap}>
         {mocoData.map((el, i) => (
           <Products
@@ -17,7 +21,6 @@ export const Bestsellers = () => {
             modelPrice={el.price}
           />
         ))}
-        <Viewall />
       </div>
     </div>
   );

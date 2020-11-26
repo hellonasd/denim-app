@@ -9,14 +9,16 @@
   border-bottom: 2px solid black;
   height: 24px;
   position: absolute;
-  top: 100%;
-  left: 35%;
+  top: 70%;
+  left: 176px;
 }
 
 @media (min-width: 768px) {
   .link {
     position: absolute;
-    top: -10%;
-    left: 80%;
+    top: 10%;
+    left: 90%;
   }
 }
+
+

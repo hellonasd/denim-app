@@ -1,6 +1,6 @@
 
 .title {
-    padding-left: 14%;
+    padding-left: 53px;
     font-family: Work Sans;
     font-style: normal;
     font-weight: bold;
@@ -26,4 +26,8 @@
     .wrap{
         width: 400px;
     }
+}
+
+.best__wrapp_vi{
+
 }
