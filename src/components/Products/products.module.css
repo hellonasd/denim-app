@@ -1,5 +1,5 @@
 .img {
-  width: 125px;
+  
   height: 160px;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -20,5 +20,13 @@ p:last-child{
   padding-bottom: 15px;
 }
 
-
-
+.items__model:first-child {
+  list-style: none;
+  
+  padding-right: 15px;
+}
+.items__model:last-child {
+  list-style: none;
+  padding-left: 15px;
+  
+}
