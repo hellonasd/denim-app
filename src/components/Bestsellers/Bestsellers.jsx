@@ -1,13 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Products } from "../Products/Products";
 import { mocoData } from "../../moco-data/mocoData.js";
-import Styles from "./Styles.module.css";
 import { Viewall } from "../viewall/Viewall";
+import { Promo } from "../promo/Promo.jsx";
+import Styles from "./Styles.module.css";
+
 export const Bestsellers = () => {
   return (
+    <Fragment>
     <div className={Styles.best__wrapp}>
       <div className={Styles.best__wrapp_vi}>
-      <h4 className={Styles.title}>Bestsellers</h4>
+        <h4 className={Styles.title}>Bestsellers</h4>
         <Viewall />
       </div>
       <div className={Styles.wrap}>
@@ -21,6 +24,9 @@ export const Bestsellers = () => {
           />
         ))}
       </div>
+     
     </div>
+    <Promo />
+    </Fragment>
   );
 };

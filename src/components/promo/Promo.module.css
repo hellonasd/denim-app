@@ -1,0 +1,19 @@
+.promo__wrapper {
+  text-align: center;
+  margin-top: 67px;
+}
+
+@media (max-width: 768px) {
+  .promo__wrapper {
+    width: 320px;
+    height: 226px;
+    background-color: #f1f2f4;
+  }
+  .promo__title {
+    font-size: 18px;
+    line-height: 21px;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+  }
+}
