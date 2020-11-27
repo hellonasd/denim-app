@@ -3,3 +3,10 @@
   background: none;
   border-bottom: 1px solid black
 }
+
+@media (max-width: 768px){
+  .link{
+    position: absolute;
+    top: 500px;
+  }
+}
