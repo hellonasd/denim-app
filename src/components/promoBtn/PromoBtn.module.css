@@ -1,0 +1,14 @@
+
+
+
+
+
+@media(max-width: 768px){
+  .btn{
+    margin-top: 30px;
+    padding: 20px 45px;
+    border: none;
+    background-color: #151C22;
+    color: white;
+  }
+}
