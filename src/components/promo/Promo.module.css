@@ -7,6 +7,15 @@
 }
 
 @media (max-width: 768px) {
+  
+  .promo__img{
+    margin: 0 auto;
+    position: absolute;
+    top: 230px;
+    display: flex;
+    justify-content: center;
+    right: 3px;
+  }
   .promoBg {
     margin: 0 auto;
     width: 290px;
@@ -14,7 +23,7 @@
     background-color: #f1f2f4;
   }
   .promo__wrapper {
-    
+    position: relative;
     margin-top: 67px;
     width: 320px;
     height: 226px;
