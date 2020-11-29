@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PromoBtn } from "../promoBtn/PromoBtn.jsx";
+import { Btn } from "../Btn/Btn.jsx";
 
 import PromoStyle from "../promo/Promo.module.css";
 
@@ -25,9 +25,9 @@ export const Promo = () => {
             Street fashion collection
           </div>
           <p className={PromoStyle.promo__subtitle}>Fall 2019</p>
-          <PromoBtn btnSubstring="Shop now" />
+          <Btn btnSubstring="Shop now" subClass={`btn--promo`} />
         </div>
-        {/* <PromoBtn btnSubstring="Shop now" /> */}
+        
       </div>
     </div>
   );

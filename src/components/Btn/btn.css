@@ -1,0 +1,14 @@
+.btn {
+  /* margin-top: 30px; */
+  /* padding: 20px 45px; */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #151c22;
+  color: white;
+}
+
+.btn--promo {
+  margin-top: 30px;
+  padding: 20px 45px;
+}
