@@ -1,6 +1,6 @@
 import './App.css';
 import { Bestsellers } from './components/Bestsellers/Bestsellers';
-import { ProductCard } from './components/Product-card/Product-card';
+import { Promo } from './components/promo/Promo.jsx';
 
 
 
@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Bestsellers />
-      <ProductCard isPrise={true}/>
-      <ProductCard isPrise={false}/>
+      <Promo />
     </div>
   );
 }
