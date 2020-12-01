@@ -1,33 +1,31 @@
 import React from "react";
 
 import { Btn } from "../Btn/Btn.jsx";
+import { promoTemp } from "../../moco-data/mocoData.js";
 
 import PromoStyle from "../promo/Promo.module.css";
 
 export const Promo = () => {
+  const { description, title, url } = promoTemp;
+
   return (
     <div className={PromoStyle.promo__wrapper}>
       <div className={PromoStyle.promoBg}>
         <picture>
           <source
             className={PromoStyle.promo__mobImg}
-            srcSet="../../img/new-collection-mobile.jpg"
-            media="(max-width: 768px)"
+            srcSet={url.tablet}
+            media="(min-width: 768px)"
           />
-          <img
-            className={PromoStyle.promo__img}
-            src="../../img/new-collection-tablet.jpg"
-            alt=""
-          />
+          <img className={PromoStyle.promo__img} src={url.mobile} alt="" />
         </picture>
         <div className={PromoStyle.promo__wrapper__title}>
           <div className={PromoStyle.promo__title}>
-            Street fashion collection
+            {description}
           </div>
-          <p className={PromoStyle.promo__subtitle}>Fall 2019</p>
+          <p className={PromoStyle.promo__subtitle}>{title}</p>
           <Btn btnSubstring="Shop now" subClass={`btn--promo`} />
         </div>
-        
       </div>
     </div>
   );

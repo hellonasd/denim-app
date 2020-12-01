@@ -36,3 +36,13 @@ export const mocoData = [
     tableUrl : `../../img/table-model-4.jpg`,
   }
 ]
+
+
+export const promoTemp = {
+  description: 'Street fashion collection',
+  title : 'Fall 2019',
+  url : {
+    mobile : "../../img/new-collection-mobile.jpg",
+    tablet : "../../img/new-collection-tablet.jpg", 
+  }
+}

@@ -6,7 +6,7 @@
   z-index: 2;
 }
 
-@media (max-width: 768px) {
+
   .promo__wrapper__title {
     position: absolute;
     top: 18px;
@@ -59,7 +59,7 @@
     font-size: 18px;
     line-height: 21px;
   }
-}
+
 
 @media (min-width: 768px) {
   .promoBg {
@@ -80,6 +80,8 @@
     width: 658px;
     height: 287px;
     background-image: url("../promo/backgroundline.png");
+    
+
   }
   .promo__title {
     padding-top: 30px;
@@ -99,5 +101,14 @@
     line-height: 30px;
     width: 114px;
     height: 18px;
+  }
+  .promo__img {
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    right: 300px;
   }
 }

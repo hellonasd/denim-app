@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Products } from "../Products/Products";
 import { mocoData } from "../../moco-data/mocoData.js";
 import { Viewall } from "../viewall/Viewall";
-import { Promo } from "../promo/Promo.jsx";
+
 import Styles from "./Styles.module.css";
 
 export const Bestsellers = () => {
@@ -26,7 +26,6 @@ export const Bestsellers = () => {
       </div>
      
     </div>
-    <Promo />
     </Fragment>
   );
 };
