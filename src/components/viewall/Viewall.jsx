@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
-import ViewallStyle from '../viewall/viewall.module.css';
+import '../viewall/Viewall.css';
+
 export const Viewall = () => {
   return (
     <Fragment>
-      <button className={ViewallStyle.link}>View all</button>
+      <button className='viewall__btn'>View all</button>
     </Fragment>
   )
 }

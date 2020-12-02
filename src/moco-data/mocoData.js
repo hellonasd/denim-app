@@ -44,5 +44,6 @@ export const promoTemp = {
   url : {
     mobile : "../../img/new-collection-mobile.jpg",
     tablet : "../../img/new-collection-tablet.jpg", 
+    dcversion : "../../img/new-collection-dsk.jpg",
   }
 }

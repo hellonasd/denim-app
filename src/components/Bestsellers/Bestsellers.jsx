@@ -1,31 +1,25 @@
-import React, { Fragment } from "react";
-import { Products } from "../Products/Products";
+import React from "react";
+import { Viewall } from "../viewall/Viewall.jsx";
 import { mocoData } from "../../moco-data/mocoData.js";
-import { Viewall } from "../viewall/Viewall";
-
-import Styles from "./Styles.module.css";
+import "../bestsellers/Bestsellers.css";
+import { Products } from "../Products/Products.jsx";
 
 export const Bestsellers = () => {
   return (
-    <Fragment>
-    <div className={Styles.best__wrapp}>
-      <div className={Styles.best__wrapp_vi}>
-        <h4 className={Styles.title}>Bestsellers</h4>
+    <div className="bestsellers__main">
+      <div className="bestsellers__wrapper">
+        <h1 className="bestsellers__title">Bestsellers</h1>
         <Viewall />
-      </div>
-      <div className={Styles.wrap}>
-        {mocoData.map((el, i) => (
-          <Products
-            key={i}
-            imgElemMobile={el.mobileUrl}
-            imgElemTable={el.tableUrl}
-            nameModel={el.name}
-            modelPrice={el.price}
+        {mocoData.map((item, i) => (
+          <Products 
+          mobileRes={item.mobileUrl} 
+          tableRes={item.tableUrl}
+          name={item.name}
+          isPrise={item.price}
+          bool={true}
           />
         ))}
       </div>
-     
     </div>
-    </Fragment>
   );
 };
