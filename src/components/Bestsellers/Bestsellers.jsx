@@ -8,15 +8,17 @@ export const Bestsellers = () => {
   return (
     <div className="bestsellers__main">
       <div className="bestsellers__wrapper">
-        <h1 className="bestsellers__title">Bestsellers</h1>
-        <Viewall />
+        <div className="bestsellers__title-wrapper">
+          <h1 className="bestsellers__title">Bestsellers</h1>
+          <Viewall />
+        </div>
         {mocoData.map((item, i) => (
-          <Products 
-          mobileRes={item.mobileUrl} 
-          tableRes={item.tableUrl}
-          name={item.name}
-          isPrise={item.price}
-          bool={true}
+          <Products
+            mobileRes={item.mobileUrl}
+            tableRes={item.tableUrl}
+            name={item.name}
+            isPrise={item.price}
+            bool={true}
           />
         ))}
       </div>

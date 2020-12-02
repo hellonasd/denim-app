@@ -1,5 +1,10 @@
 .viewall__btn{
+  position: absolute;
   border: none;
   background: none;
   border-bottom: 1px solid black;
+  top: 585px;
+  display: flex;
+  justify-content: center;
+  left: 120px;
 }

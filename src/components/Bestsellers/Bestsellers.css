@@ -1,0 +1,18 @@
+.bestsellers__main{
+  width: 293px;
+  margin: 0 auto;
+}
+
+.bestsellers__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bestsellers__title-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 282px;
+  margin-bottom: 40px;
+}
