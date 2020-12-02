@@ -8,3 +8,17 @@
   justify-content: center;
   left: 120px;
 }
+
+
+@media(min-width : 768px){
+  .viewall__btn{
+    
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
