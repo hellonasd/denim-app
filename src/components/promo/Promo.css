@@ -1,0 +1,36 @@
+.promo__main {
+  padding-top: 100px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.promo__collection {
+  margin: 0px;
+  padding: 0px;
+  width: 320px;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+  align-items: center;
+  /* background-color: #f1f2f4; */
+  background: url("../promo/backgroundline.png");
+}
+
+.promo__img {
+  width: 320px;
+  height: 226px;
+}
+
+.promo__background {
+  /* background: url("../promo/backgroundline.png"); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 290px;
+  height: 211px;
+  background-color: #f1f2f4;
+}
