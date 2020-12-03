@@ -1,5 +1,5 @@
 import './App.css';
-import { Bestsellers } from './components/Bestsellers/Bestsellers';
+import { Bestsellers } from './components/bestsellers/Bestsellers.jsx';
 import { Promo } from './components/promo/Promo.jsx';
 import { Categories } from './components/Categories/Categories.jsx';
 

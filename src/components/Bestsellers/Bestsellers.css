@@ -1,0 +1,55 @@
+.bestsellers__main{
+  width: 293px;
+  margin: 0 auto;
+}
+
+.bestsellers__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bestsellers__title-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 282px;
+  margin-bottom: 40px;
+}
+
+
+@media(min-width : 768px){
+  
+  .bestsellers__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+  .bestsellers__main{
+    width: 768px;
+    margin: 0 auto;
+  }
+  .bestsellers__title-wrapper{
+    width: 707px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+
+@media(min-width: 1366px){
+  .bestsellers__wrapper{
+   
+    width: 1366px;
+  }
+  .bestsellers__main{
+    width: 1366px;
+    margin: 0 auto;
+  }
+  .bestsellers__title-wrapper{
+    width: 1341px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

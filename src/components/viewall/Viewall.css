@@ -1,0 +1,23 @@
+.viewall__btn{
+  position: absolute;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  top: 585px;
+  
+  left: 120px;
+}
+
+
+@media(min-width : 768px){
+  .viewall__btn{
+    border: none;
+    position: unset;
+    background: none;
+    border-bottom: 1px solid black;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
