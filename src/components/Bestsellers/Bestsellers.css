@@ -19,13 +19,7 @@
 
 
 @media(min-width : 768px){
-  .bestsellers__title-wrapper{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 768px;
-    margin-bottom: 40px;
-  }
+  
   .bestsellers__wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -34,5 +28,28 @@
   .bestsellers__main{
     width: 768px;
     margin: 0 auto;
+  }
+  .bestsellers__title-wrapper{
+    width: 707px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+
+@media(min-width: 1366px){
+  .bestsellers__wrapper{
+   
+    width: 1366px;
+  }
+  .bestsellers__main{
+    width: 1366px;
+    margin: 0 auto;
+  }
+  .bestsellers__title-wrapper{
+    width: 1341px;
+    display: flex;
+    justify-content: space-between;
   }
 }
