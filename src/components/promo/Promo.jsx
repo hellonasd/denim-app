@@ -8,8 +8,9 @@ export const Promo = () => {
     <div className="promo__main">
       <div className="promo__wrapper">
         <picture>
+          <source srcSet={promoTemp.url.dcversion} media="(min-width: 1366px)" />
           <source srcSet={promoTemp.url.tablet} media="(min-width: 768px)" />
-          <img className="promo__img" src={promoTemp.url.mobile} alt="" />
+          <img className="promo__img" src={promoTemp.url.mobile} alt='name' />
         </picture>
 
         <div className="promo__collection">
