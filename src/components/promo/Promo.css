@@ -1,5 +1,5 @@
 .promo__main {
-  padding-top: 100px;
+  padding-top: 150px;
   width: 320px;
   margin: 0 auto;
 }
@@ -21,6 +21,7 @@
 .promo__img {
   width: 320px;
   height: 226px;
+  display: block;
 }
 
 .promo__background {
@@ -62,6 +63,7 @@
   .promo__img {
     width: 354px;
     height: 287px;
+    display: block;
   }
 
   .promo__background {
@@ -90,7 +92,7 @@
   .promo__collection {
     margin: 0px;
     padding: 0px;
-    width: 470px;
+    width: 615px;
     height: 370px;
     display: flex;
     flex-wrap: wrap;
@@ -102,15 +104,16 @@
   }
 
   .promo__img {
-    width: 700px;
+    width: 746px;
     height: 370px;
+    
   }
 
   .promo__background {
     margin-top: 31px;
-    margin-right: 70px;
+    margin-right: 183px;
     margin-bottom: 31px;
-    width: 400px;
+    width: 542px;
     height: 308px;
     background-color: #f1f2f4;
   }

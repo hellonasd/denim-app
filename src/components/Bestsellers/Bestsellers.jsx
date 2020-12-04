@@ -1,7 +1,7 @@
 import React from "react";
 import { Viewall } from "../viewall/Viewall.jsx";
 import { mocoData } from "../../moco-data/mocoData.js";
-import "../bestsellers/Bestsellers.css";
+import "../Bestsellers/Bestsellers.css";
 import { Products } from "../Products/Products.jsx";
 
 export const Bestsellers = () => {
