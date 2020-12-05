@@ -1,0 +1,45 @@
+.catalog__main {
+  width: 320px;
+  margin: 0 auto;
+}
+.catalog__wrapper {
+  width: 320px;
+}
+
+.catalog__name {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.catalog__btn {
+  background-color:#ffffff;
+  margin: 0 auto;
+  width: 290px;
+  height: 47px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  border: 2px solid #151c22;
+}
+
+.catalog__btn-name {
+  display: block;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  left: 17px;
+}
+
+.catalog__btn-img {
+  position: absolute;
+  right: 17px;
+}
+
+.catalog__items{
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
