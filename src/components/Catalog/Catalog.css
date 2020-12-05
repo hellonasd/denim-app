@@ -43,3 +43,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.catalog__all-items{
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}

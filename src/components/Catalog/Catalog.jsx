@@ -1,6 +1,8 @@
 import React from "react";
 import { checkPageType } from "../../utils/checkPage.js";
 import { mocoData } from '../../moco-data/mocoData.js'
+import { Btn } from '../Btn/Btn.jsx';
+
 import "./Catalog.css";
 
 export const Catalog = ({ suBclass }) => {
@@ -17,6 +19,12 @@ export const Catalog = ({ suBclass }) => {
             checkPageType(item, 'catalog')
           ))}
         </div>
+          <div className='catalog__all-items' >
+            <p className='catalog__all--text'>
+            Showing 9 of 45 items
+            </p>
+          </div>
+          <Btn btnSubstring='Load more' subClass='catalog--btn'/>
       </div>
     </div>
   );
