@@ -1,1 +1,83 @@
 /*App style*/
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    local("WorkSans-Regular"),
+    local("WorkSans Regular"),
+    local("WorkSansRegular"),
+    url("./fonts/WorkSans-Regular.woff"),
+    url("./fonts/WorkSans-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    local("WorkSans-Medium"),
+    local("WorkSans Medium"),
+    local("WorkSansMedium"),
+    url("./fonts/WorkSans-Medium.woff"),
+    url("./fonts/WorkSans-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    local("WorkSans-Bold"),
+    local("WorkSans Bold"),
+    local("WorkSansBold"),
+    url("./fonts/WorkSans-Bold.woff"),
+    url("./fonts/WorkSans-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src:
+    local("WorkSans-ExtraBold"),
+    local("WorkSans ExtraBold"),
+    local("WorkSansExtraBold"),
+    url("./fonts/WorkSans-ExtraBold.woff"),
+    url("./fonts/WorkSans-ExtraBold.woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+
+  width: 1px;
+  height: 1px;
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sprite {
+  display: none;
+}
+
+.list-style {
+  list-style: none;
+}
+
+body {
+  font-family: "Work Sans", "Roboto", monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: #151C22;
+}
