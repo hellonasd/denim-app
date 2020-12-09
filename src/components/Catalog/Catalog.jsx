@@ -1,5 +1,5 @@
 import React from "react";
-import { checkPageType } from "../../utils/checkPage.js";
+
 import { mocoData } from '../../moco-data/mocoData.js'
 import { Btn } from '../Btn/Btn.jsx';
 
@@ -15,9 +15,9 @@ export const Catalog = ({ suBclass }) => {
           <img className="catalog__btn-img" src="../../img/btn-open.svg" />
         </button>
         <div className="catalog__items">
-          {mocoData.map(item => (
+          {/* {mocoData.map(item => (
             checkPageType(item, 'catalog')
-          ))}
+          ))} */}
         </div>
           <div className='catalog__all-items' >
             <p className='catalog__all--text'>

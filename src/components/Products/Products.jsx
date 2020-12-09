@@ -2,6 +2,7 @@ import React from "react";
 import { renderItem } from "../../utils/utilFunc.js";
 import '../Products/Products.css';
 export const Products = ({ subClass,mobileRes, tableRes, name, bool, isPrise,dcRes }) => {
+  console.log(subClass)
   const price = <p className="product__prise">{isPrise}</p>;
   const imgView = <img className={`product__img ${subClass}`} src={mobileRes} />;
 

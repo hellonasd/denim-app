@@ -1,7 +1,9 @@
 import React from "react";
 import { Viewall } from "../viewall/Viewall.jsx";
 import { mocoData } from "../../moco-data/mocoData.js";
-import { checkPageType } from '../../utils/checkPage.js'
+
+import { Products } from '../Products/Products.jsx';
+
 import "../Bestsellers/Bestsellers.css";
 
 
@@ -17,7 +19,16 @@ export const Bestsellers = () => {
         <Viewall />
       </div>
         {mocoData.map((item, i) => (
-          checkPageType(item, 'firstpage')
+          <Products
+          key={Math.random() * 10}
+          mobileRes={item.mobileUrl}
+          tableRes={item.tableUrl}
+          dcRes={item.dcUrl}
+          name={item.name}
+          
+          isPrise={item.price}
+          bool={true}
+         />
         ))}
       </div>
     </div>
