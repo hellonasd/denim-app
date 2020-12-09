@@ -1,6 +1,6 @@
 import React from "react";
 import { Btn } from "../Btn/Btn.jsx";
-import { promoTemp } from "../../moco-data/mocoData.js";
+import { promoTemp } from "../../mock-data/mock-data.js";
 import "../promo/Promo.css";
 
 export const Promo = () => {

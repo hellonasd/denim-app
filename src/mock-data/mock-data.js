@@ -1,4 +1,4 @@
-export const mocoData = [
+export const mockData = [
   {
     name : 'Jacket',
     price : '$ 120',
@@ -124,6 +124,7 @@ export const mocoData = [
   
 
 ]
+
 
 
 export const promoTemp = {

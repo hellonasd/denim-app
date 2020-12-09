@@ -6,7 +6,6 @@ export const Products = ({ subClass,mobileRes, tableRes, name, bool, isPrise,dcR
   const price = <p className="product__prise">{isPrise}</p>;
   const imgView = <img className={`product__img ${subClass}`} src={mobileRes} />;
 
-
   return (
       <figure>
         <picture>
