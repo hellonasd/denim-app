@@ -4,6 +4,16 @@
   margin: 0 auto;
 }
 
+.promo__description{
+  margin: 0px;
+  padding: 0px;
+}
+
+.promo__title{
+  margin: 0px;
+  padding: 0px;
+}
+
 .promo__collection {
   margin: 0px;
   padding: 0px;
