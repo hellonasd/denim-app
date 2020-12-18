@@ -4,6 +4,8 @@ import { Promo } from './components/promo/Promo.jsx';
 import { Categories } from './components/Categories/Categories.jsx';
 // import { Catalog } from './components/Catalog/Catalog';
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Products } from './components/Products/Products';
+import { ProductDetail } from './components/product-detail/ProductDetail';
 
 
 
@@ -17,6 +19,7 @@ function App() {
       {
         // <Catalog /> - для данной страницы необходимо делать роутинг
       }
+      <ProductDetail />
       </Router>
     </div>
   );
