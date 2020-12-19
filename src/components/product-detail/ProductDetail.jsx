@@ -1,15 +1,11 @@
 import React from "react";
 import { Color } from "../Color/Color.jsx";
+import { Btn } from "../Btn/Btn.jsx";
 
-import { Gallery } from "../Gallery/Gallery.jsx";
-
+import "../product-detail/productDetail.css";
 export const ProductDetail = ({ price, color, size }) => {
-
-  console.log(color)
-  console.log(price)
   return (
     <div className="detail__main">
-
       <div className="detail__wrapper">
         <div className="detail__description">
           <p className="detail__description--title">Overalls</p>
@@ -19,19 +15,25 @@ export const ProductDetail = ({ price, color, size }) => {
             flared sleeves and straight legs with front and back pockets.
           </p>
         </div>
-        <Color color={color}/>
-        <div className='detail__size'>
-          {size.map(it => {
+        <div className="detail__color">
+          <p className="color__title">Color</p>
+          <Color color={color} />
+        </div>
+        <p className="detail__size">Size</p>
+        <div className="detail__size--wrapp">
+          {size.map((it) => {
             return (
-              <ul key={Math.random() * 10} className='detail__size--list'>
-                <li key={Math.random() * 10} className='detail__size--name'>
+              <ul key={Math.random() * 10} className="detail__size--list">
+                <li key={Math.random() * 10} className="detail__size--name">
                   {it}
                 </li>
               </ul>
-            )
+            );
           })}
-          
         </div>
+        <p className="detail__price">{price}</p>
+
+        <Btn subClass="btn--add-card" btnSubstring="Add to cart" />
       </div>
     </div>
   );

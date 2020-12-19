@@ -1,5 +1,17 @@
 .input--color {
+  margin: 0px 25px 0px 0px;
   border: none;
   width: 16px;
   height: 16px;
+  
+}
+
+input[type='radio']:active{
+  background-color: indigo;
+}
+
+
+.input--color:not(:disabled):active::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
 }
