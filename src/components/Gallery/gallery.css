@@ -1,0 +1,30 @@
+.gallery__main{
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visibli-hidden{
+  visibility: hidden;
+}
+.gallery__items--item{
+  list-style: none;
+}
+
+.gallery__btn{
+  display: flex;
+  
+}
+
+.gallery__btn--left {
+  background: none;
+  border: none;
+}
+
+.gallery__btn--right{
+  background: none;
+  border: none;
+}
+
+.gallery__img--active{
+  width: 274px;
+}
