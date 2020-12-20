@@ -3,25 +3,24 @@ import React from 'react';
 import '../Color/color.css';
 
 
-const inputStyle = {
-  filter: 'grayscale(.5)',
-  backgroun : 'red'
-};
+// style={{backgroundColor: it}
+
 
 export const Color = ({color}) => {
   
   return (
     <React.Fragment>
       {color.map(it => {
-        return <input 
-        key={Math.random() * 10} 
-        className="input--color" 
-        type="radio"
-         name="color"
-        //  style={{filter: `${grayscale(1)}`}}
-         style={inputStyle}
-         />
+        return (
+          <label className='radio' >
+            <input className='radio--input' name='color' type='radio' />
+            <div className='radio--radio'
+            style={{border: `2px solid ${it}`,
+            backgroundColor:`${it}`}} ></div>
+          </label>
+        )
       })}
+      
     </React.Fragment>
   )
 }
