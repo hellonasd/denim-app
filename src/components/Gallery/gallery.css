@@ -18,13 +18,15 @@
 .gallery__btn--left {
   background: none;
   border: none;
+  padding-right: 15px;
 }
 
 .gallery__btn--right{
   background: none;
   border: none;
-}
+  padding-left: 15px;
 
+}
 .gallery__img--active{
   width: 274px;
 }

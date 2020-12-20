@@ -7,6 +7,7 @@ import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 
 import { ProductDetail } from "./components/product-detail/ProductDetail";
 import { Gallery } from "./components/Gallery/Gallery";
+import { Filters } from "./components/Filter/Filters";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           // <Catalog /> - для данной страницы необходимо делать роутинг
         }
         <Gallery />
+        <Filters />
       </Router>
     </div>
   );

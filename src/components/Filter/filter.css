@@ -1,0 +1,29 @@
+.filter {
+  width: 320px;
+}
+
+.filters__menu {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__price--imgclose {
+  transform: rotate(180deg);
+}
+
+.input--range {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 290px;
+  height: 2px;
+  border-radius: 3px;
+  outline: none;
+}
