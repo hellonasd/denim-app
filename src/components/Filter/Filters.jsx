@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../Filter/filter.css";
+import { RangerSlider } from "../Range-slider/RangeSlider";
 
 export const Filters = () => {
   const [menu, setMenu] = React.useState("close");
@@ -9,19 +10,7 @@ export const Filters = () => {
   React.useEffect(() => {
     if (menu === "open") {
       setSlider(
-        <div>
-          <input
-            className="input--range-left"
-            min="40"
-            max="240"
-            type="range"
-          />
-          <input className="input--range-right"
-            min="40"
-            max="240"
-            type="range" 
-            />
-        </div>
+        <RangerSlider />
       );
     } else {
       setSlider("");
