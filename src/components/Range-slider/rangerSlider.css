@@ -11,7 +11,9 @@
 .slider {
   position: relative;
   z-index: 1;
-  height: 5px;
+  height: 2px;
+  top: 0px;
+  margin: 0 15px;
 }
 
 .slider > .track {
@@ -19,7 +21,7 @@
   z-index: 1;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0px;
   bottom: 0;
   border-radius: 5px;
   background-color: #f1f2f4;
@@ -39,8 +41,8 @@
 .slider > .thumb {
   position: absolute;
   z-index: 3;
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   background-color: #151c22;
   border-radius: 50%;
   
@@ -48,12 +50,16 @@
 
 
 .slider > .thumb.left {
+  
 	left: 25%;
-	transform: translate(-15px, -10px);
+  transform: translate(-20px, -15px);
+  
+ 
 }
 .slider > .thumb.right {
 	right: 25%;
-	transform: translate(15px, -10px);
+  transform: translate(30px, -15px);
+  
 }
 
 
@@ -64,18 +70,23 @@ input[type=range]{
   z-index: 2;
   height: 2px;
   width: 100%;
-  width: -50px;
+  top: -200px;
 }
 
 
-/* #input-left{
+ /* #input-left{
+  
   top: -100px;
+
 }
 
 #input-right {
+  
   top: -50px;
 } */
-input[type=range] {
+
+
+/* input[type=range] {
 	position: absolute;
 	pointer-events: none;
 	-webkit-appearance: none;
@@ -84,6 +95,7 @@ input[type=range] {
 	width: 100%;
 	opacity: 0;
 }
+
 input[type=range]::-webkit-slider-thumb {
 	pointer-events: all;
 	width: 30px;
@@ -92,4 +104,49 @@ input[type=range]::-webkit-slider-thumb {
 	border: 0 none;
 	background-color: red;
 	-webkit-appearance: none;
+} */
+
+
+input[type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  background: #276fea;
+  height: 2px;
+  border: none;
+  border-style: none;
+  outline: none;
+  outline-offset: 0;
+  pointer-events: none; 
+  
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ background: #276fea;
+ border: 1px solid #bdc3c7;
+ width: 10px;
+ height: 10px;
+ border-radius: 10px;
+ border: none;
+ cursor: pointer;
+ pointer-events: all; 
+ z-index: 11; 
+}
+
+input[type=range]::-moz-range-thumb {
+  background: #276fea;
+  border: 1px solid #bdc3c7;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  pointer-events: all; 
+}
+
+input[type=range]::-moz-range-track {
+  outline: none;
+  pointer-events: none;
 }
