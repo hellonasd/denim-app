@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { act } from "react-dom/test-utils";
 import { ProductDetail } from "../product-detail/ProductDetail.jsx";
 
@@ -14,16 +14,14 @@ export const Gallery = () => {
   );
 
   const onLeft = () => {
-    
-
-    setActive(mockData[index - 1].mobileUrl);
-    console.log("index", index);
-    console.log("leng", mockData.length - 1);
+    setActive(
+      mockData[index - 1 < 0 ? mockData.length - 1 : index - 1].mobileUrl
+    );
 
     index -= 1;
-    if (index <= 0) {
-      setActive(mockData[mockData.length - 1].mobileUrl);
+    if (index < 0) {
       index = mockData.length - 1;
+      setActive(mockData[mockData.length - 1].mobileUrl);
     }
 
     setItems(
@@ -32,8 +30,10 @@ export const Gallery = () => {
   };
 
   const onRight = () => {
-    // setActive(mockData[index + 1].mobileUrl);
-    setActive(mockData[index + 1].mobileUrl);
+    
+    setActive(
+      mockData[index + 1 > mockData.length - 1 ? 0 : index + 1].mobileUrl
+    );
 
     index += 1;
     if (index > mockData.length - 1) {
@@ -78,10 +78,10 @@ export const Gallery = () => {
         </div>
       </div>
       <ProductDetail
-      price={mockData[index].price}
-      color={mockData[0].color}
-      size={mockData[0].size}
-    />
+        price={mockData[index].price}
+        color={mockData[0].color}
+        size={mockData[0].size}
+      />
     </div>
   );
 };

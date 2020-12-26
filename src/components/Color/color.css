@@ -1,8 +1,10 @@
+
+
+
 .radio {
-  display: flex;
   margin-right: 10px;
-  
 }
+
 
 .radio--input {
   display: none;
