@@ -19,12 +19,14 @@
   background: none;
   border: none;
   padding-right: 15px;
+  outline: none;
 }
 
 .gallery__btn--right{
   background: none;
   border: none;
   padding-left: 15px;
+  outline: none;
 
 }
 .gallery__img--active{

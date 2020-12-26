@@ -22,10 +22,10 @@ export const Color = ({ color }) => {
                 className="radio--radio"
                 style={{ border: `2px solid ${it}` }}
               ></div>
-              <div
+              <span
                 className="radio__active"
                 style={{ backgroundColor: `${it}` }}
-              ></div>
+              ></span>
             </label>
           
         );
