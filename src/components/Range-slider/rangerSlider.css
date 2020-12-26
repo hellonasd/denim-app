@@ -66,15 +66,18 @@
   border-radius: 50%;
   z-index: 3;
 }
-.slider__value {
-  display: flex;
-  width: 290px;
-}
+
 .ranger__slider-price-left {
   position: absolute;
+  top: 80px;
+  width: 100px;
+  margin: 0px;
 }
 .ranger__slider-price-right {
   position: absolute;
+  top: 80px;
+  width: 100px;
+  margin: 0px;
 }
 
 input[type="range"] {

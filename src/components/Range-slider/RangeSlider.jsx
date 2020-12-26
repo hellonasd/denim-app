@@ -87,22 +87,19 @@ export const RangerSlider = () => {
           <div className="track"></div>
           <div ref={sliderRef} className="ranger"></div>
         </div>
-       
+        <p
+          style={{ left: `${positionLeft}%` }}
+          className="ranger__slider-price-left"
+        >
+          $ {valueLeft}
+        </p>
+        <p
+          style={{ left: `${positionRight}%` }}
+          className="ranger__slider-price-right"
+        >
+          $ {valueRight}
+        </p>
       </div>
-      <div className="slider__value">
-            <p
-              style={{ left: `${positionLeft}%` }}
-              className="ranger__slider-price-left"
-            >
-              $ {valueLeft}
-            </p>
-            <p
-              style={{ left: `${positionRight}%` }}
-              className="ranger__slider-price-right"
-            >
-             $ {valueRight}
-            </p>
-          </div>
     </div>
   );
 };

@@ -4,9 +4,9 @@
 }
 
 .filters__menu {
-  
-  border-bottom: 2px solid #F1F2F4;
-  padding-bottom: 30px;
+  border-bottom: 2px solid #f1f2f4;
+  padding: 0px;
+  height: 45px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,6 @@
 .filter__price {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .filter__price--imgclose {
