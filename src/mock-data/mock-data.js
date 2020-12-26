@@ -39,6 +39,17 @@ export const mockData = [
     tableUrl : `../../img/table-model-4.jpg`,
     dcUrl : `../../img/model-dc-4.jpg`,
   },
+  {
+    name : 'Overalls',
+    price : '$ 160',
+    category : 'firstpage',
+    color : ['#3B6392', '#B0C3C7', ' #BFC3C8'],
+    size : ['XS', 'S', 'M', 'L', 'XL'],
+    mobileUrl : `../../img/model-4.jpg`,
+    tableUrl : `../../img/table-model-4.jpg`,
+    dcUrl : `../../img/model-dc-4.jpg`,
+  },
+ 
 ]
 
 
