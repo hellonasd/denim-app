@@ -37,6 +37,7 @@ export const Filters = () => {
             className={`filter__price--img${menu}`}
             onClick={changePrice}
           />
+         
         </div>
         <div className="filter__ranger--slider">{slider}</div>
       </div>
