@@ -14,9 +14,17 @@ export const Color = ({color}) => {
         return (
           <label key={Math.random() * 10} className='radio' >
             <input key={Math.random() * 10} className='radio--input' name='color' type='radio' />
-            <div key={Math.random() * 10} className='radio--radio'
-            style={{border: `2px solid ${it}`,
-            backgroundColor:`${it}`}} ></div>
+            <div 
+            key={Math.random() * 10} 
+            className='radio--radio'
+            style={{border: `2px solid ${it}`}}
+            
+            ></div>
+            <div 
+            className='radio__active'
+            style={{backgroundColor : `${it}`}}
+            
+            ></div>
           </label>
         )
       })}
