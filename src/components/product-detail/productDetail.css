@@ -67,8 +67,7 @@
 }
 
 @media (min-width: 768px) {
-
-  .detail__main{
+  .detail__main {
     height: 610px;
     background-color: #f1f2f4;
   }
@@ -88,11 +87,13 @@
   .detail__size {
     margin-top: 20px;
     margin-bottom: 0px;
+
     font-family: Work Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 21px;
+
     color: #151c22;
   }
 
@@ -103,7 +104,6 @@
     font-size: 28px;
     line-height: 33px;
     color: #151c22;
-    
   }
 
   .detail__description--subtitle {
@@ -116,10 +116,8 @@
     width: 275px;
     height: 74px;
     padding-bottom: 10px;
-    
   }
 
-  
   .detail__wrapper {
     margin-left: 50px;
     width: 302px;
@@ -138,10 +136,8 @@
     font-family: Work Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
     color: #727a82;
   }
 }
