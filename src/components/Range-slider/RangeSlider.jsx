@@ -70,7 +70,6 @@ export const RangerSlider = () => {
           onInput={(event) => onSetRight(event)}
           value={valueRight}
         />
-        <div className="push"></div>
         <div className="btn-wrapp">
           <div
             ref={btnLeft}
