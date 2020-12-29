@@ -1,6 +1,6 @@
 import React from "react";
 
-import { mocoData } from '../../moco-data/mocoData.js'
+// import { mocoData } from '../../moco-data/mocoData.js'
 import { Btn } from '../Btn/Btn.jsx';
 
 import "./Catalog.css";
@@ -17,7 +17,7 @@ export const Catalog = ({ suBclass }) => {
         <div className="catalog__items">
           {/* {mocoData.map(item => (
             checkPageType(item, 'catalog')
-          ))} */}
+          ))}  */}
         </div>
           <div className='catalog__all-items' >
             <p className='catalog__all--text'>

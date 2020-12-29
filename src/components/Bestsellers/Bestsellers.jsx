@@ -1,13 +1,11 @@
 import React from "react";
 import { Viewall } from "../viewall/Viewall.jsx";
-
-import { mockData } from '../../mock-data/mock-data.js';
-
+import { mockData } from "../../mock-data/mock-data.js";
 import { Products } from "../Products/Products.jsx";
-
 import { Title } from "../Title/Title";
-
 import "../Bestsellers/Bestsellers.css";
+import { Link} from "react-router-dom";
+
 
 export const Bestsellers = () => {
   return (
@@ -18,6 +16,7 @@ export const Bestsellers = () => {
           <Viewall />
         </div>
         {mockData.map((item, i) => (
+          <Link to={`/product/${i}`}>
           <Products
             key={Math.random() * 10}
             mobileRes={item.mobileUrl}
@@ -27,6 +26,7 @@ export const Bestsellers = () => {
             isPrise={item.price}
             bool={true}
           />
+          </Link>
         ))}
       </div>
     </div>
