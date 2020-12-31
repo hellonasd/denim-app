@@ -2,7 +2,10 @@
   width: 293px;
   margin: 0 auto;
 }
-
+.link{
+  text-decoration: none;
+  color: black;
+}
 .bestsellers__wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +40,7 @@
   }
   
 }
+
 
 
 @media(min-width: 1366px){

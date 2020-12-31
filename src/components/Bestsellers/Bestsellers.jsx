@@ -16,7 +16,7 @@ export const Bestsellers = () => {
           <Viewall />
         </div>
         {mockData.map((item, i) => (
-          <Link key={i} to={`/product/${i}`}>
+          <Link className='link' key={i} to={`/product/${i}`}>
           <Products
             key={Math.random() * 10}
             mobileRes={item.mobileUrl}
