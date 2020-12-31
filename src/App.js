@@ -2,13 +2,13 @@ import "./App.css";
 import { Bestsellers } from "./components/Bestsellers/Bestsellers.jsx";
 import { Promo } from "./components/promo/Promo.jsx";
 import { Categories } from "./components/Categories/Categories.jsx";
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Gallery } from "./components/Gallery/Gallery";
 
-
 function App() {
+  
   return (
     <div className="App">
       <Router>
@@ -16,9 +16,7 @@ function App() {
           <Route exact path="/">
             <Bestsellers />
           </Route>
-          <Route path="/product/:number">
-            <Gallery />
-          </Route>
+          <Route path="/product/:number" component={Gallery}/>
         </Switch>
         <Promo />
         <Categories />

@@ -4,49 +4,54 @@ import { ProductDetail } from "../product-detail/ProductDetail.jsx";
 import { mockData } from "../../mock-data/mock-data.js";
 import "../Gallery/gallery.css";
 
-
 let index = 2;
-export const Gallery = () => {
-  const [active, setActive] = useState(mockData[index].mobileUrl);
+export const Gallery = (props) => {
+  // index = props.match.params.number;
+   index = React.useRef(+props.match.params.number);
+  
+  
+  const [active, setActive] = useState(mockData[index.current].mobileUrl);
   const [items, setItems] = useState(
     mockData.filter((it) => it.mobileUrl !== active)
   );
 
   const onLeft = () => {
     setActive(
-      mockData[index - 1 < 0 ? mockData.length - 1 : index - 1].mobileUrl
+      mockData[index.current - 1 < 0 ? mockData.length - 1 : index.current - 1].mobileUrl
     );
-    index -= 1;
-    if (index < 0) {
-      index = mockData.length - 1;
+    index.current -= 1;
+    if (index.current < 0) {
+      index.current = mockData.length - 1;
       setActive(mockData[mockData.length - 1].mobileUrl);
     }
+    
     setItems(
-      mockData.filter((it) => it.mobileUrl !== mockData[index].mobileUrl)
+      mockData.filter((it) => it.mobileUrl !== mockData[index.current].mobileUrl)
     );
   };
 
   const onRight = () => {
     setActive(
-      mockData[index + 1 > mockData.length - 1 ? 0 : index + 1].mobileUrl
+      mockData[index.current + 1 > mockData.length - 1 ? 0 : index.current + 1].mobileUrl
     );
-    index += 1;
-    if (index > mockData.length - 1) {
-      index = 0;
+    index.current += 1;
+   
+    if (index.current > mockData.length - 1) {
+      index.current = 0;
       setActive(mockData[0].mobileUrl);
     }
     setItems(
-      mockData.filter((it) => it.mobileUrl !== mockData[index].mobileUrl)
+      mockData.filter((it) => it.mobileUrl !== mockData[index.current].mobileUrl)
     );
   };
   const selectedItem = (event) => {
     const indexOnClicked = mockData.findIndex(
       (it) => it.mobileUrl === event.target.attributes.src.value
     );
-    index = indexOnClicked;
-    setActive(mockData[index].mobileUrl);
+    index.current = indexOnClicked;
+    setActive(mockData[index.current].mobileUrl);
     setItems(
-      mockData.filter((it) => it.mobileUrl !== mockData[index].mobileUrl)
+      mockData.filter((it) => it.mobileUrl !== mockData[index.current].mobileUrl)
     );
   };
 
@@ -94,7 +99,7 @@ export const Gallery = () => {
         </div>
       </div>
       <ProductDetail
-        price={mockData[index].price}
+        price={mockData[index.current].price}
         color={mockData[0].color}
         size={mockData[0].size}
       />
