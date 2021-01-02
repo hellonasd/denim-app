@@ -141,3 +141,10 @@
     color: #727a82;
   }
 }
+
+@media (min-width: 1366px) {
+  .detail__main {
+    width: 668px;
+    height: 656px;
+  }
+}
