@@ -7,12 +7,12 @@ import "../Bestsellers/Bestsellers.css";
 import { Link} from "react-router-dom";
 
 
-export const Bestsellers = () => {
+export const Bestsellers = ({titleName}) => {
   return (
     <div className="bestsellers__main">
       <div className="bestsellers__wrapper">
         <div className="bestsellers__title-wrapper">
-          <Title titleName={`Bestsellers`} subClass={``} />
+          <Title titleName={titleName} subClass={``} />
           <Viewall />
         </div>
         {mockData.map((item, i) => (
