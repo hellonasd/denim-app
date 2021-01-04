@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Gallery } from "./components/Gallery/Gallery";
 
+
 function App() {
   return (
     <div className="App">
@@ -14,13 +15,14 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Bestsellers titleName="Bestsellers" />
+            <Promo />
           </Route>
           <Route exact path="/product/:number" component={Gallery} />
         </Switch>
         <Route exact path="/product/:number">
           <Bestsellers titleName="You may also like" />
         </Route>
-        <Promo />
+        {/* <Promo /> */}
         <Categories />
       </Router>
     </div>

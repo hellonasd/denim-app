@@ -16,7 +16,7 @@ export const Catalog = ({ suBclass }) => {
         </button>
         <div className="catalog__items">
           {/* {mocoData.map(item => (
-            checkPageType(item, 'catalog')
+            <li>{item}</li>
           ))}  */}
         </div>
           <div className='catalog__all-items' >

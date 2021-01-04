@@ -30,13 +30,18 @@
   padding-top: 40px;
 }
 
-.detail__description--subtitle {
+.detail__description--subtitle{
+  display: block;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #151c22;
+  width: 275px;
+  height: 100%;
+  word-wrap: break-word;
+  padding: 5px 5px 5px 0px;
 }
 
 .detail__main {

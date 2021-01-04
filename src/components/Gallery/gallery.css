@@ -1,6 +1,7 @@
 .gallery__main {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 .gallery__items--item > .img__slider {
   display: none;
@@ -99,6 +100,7 @@
     display: flex;
     width: 1366px;
     margin: 0 auto;
+    
   }
   .gallery__wrapper {
     margin-right: 130px;
