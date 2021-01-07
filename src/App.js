@@ -6,6 +6,7 @@ import { Categories } from "./components/Categories/Categories.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Gallery } from "./components/Gallery/Gallery";
+import { Catalog } from "./components/Catalog/Catalog";
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
         <Route exact path="/product/:number">
           <Bestsellers titleName="You may also like" />
         </Route>
-        {/* <Promo /> */}
         <Categories />
+        <Catalog />
+        
       </Router>
     </div>
   );

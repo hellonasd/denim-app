@@ -16,6 +16,9 @@
   display: flex;
   justify-content: space-between;
 }
+.filter__nav--items .close{
+  display: none;
+}
 
 .filter__price--imgclose {
   transform: rotate(180deg);

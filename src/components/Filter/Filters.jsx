@@ -3,7 +3,7 @@ import React from "react";
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
 
-export const Filters = () => {
+export const Filters = ({openMenu, closeMenu}) => {
   const [menu, setMenu] = React.useState("close");
   const [slider, setSlider] = React.useState("");
 
@@ -27,7 +27,7 @@ export const Filters = () => {
         <ul className="filters__menu">
           <li className="filter__nav--items">Clear all</li>
           <li className="filter__nav--items">Filters</li>
-          <li className="filter__nav--items">Close</li>
+          <li onClick={openMenu} className={`filter__nav--items ${closeMenu}`}>Close</li>
         </ul>
         <div className="filter__price">
           <p className="filter__price--price">Price</p>
