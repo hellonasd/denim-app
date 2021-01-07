@@ -9,22 +9,23 @@ import "./Catalog.css";
 export const Catalog = ({ suBclass }) => {
   const [menu, setMenu] = React.useState('close');
   const [expanded, setExpanded] = React.useState('');
-  const [closeMenu, setCloseMenu] = React.useState('close');
+  
   const openMenu = () => {
     setMenu(menu === "open" ? "close" : "open");
-    setCloseMenu(closeMenu === 'open' ? 'close' : 'open')
+    
     
   }
 
   React.useEffect(()=>{
     if (menu === "open") {
       setExpanded(
-        <Filters subClass={closeMenu} openMenu={openMenu}/>
+        <Filters openMenu={openMenu}/>
       );
     } else {
       setExpanded("");
     }
-  },[menu, closeMenu])
+  },[menu])
+  
 
   return (
     <div className="catalog__main">

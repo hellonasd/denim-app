@@ -3,15 +3,13 @@ import React from "react";
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
 
-export const Filters = ({openMenu, closeMenu}) => {
+export const Filters = ({ openMenu }) => {
   const [menu, setMenu] = React.useState("close");
   const [slider, setSlider] = React.useState("");
 
   React.useEffect(() => {
     if (menu === "open") {
-      setSlider(
-        <RangerSlider />
-      );
+      setSlider(<RangerSlider />);
     } else {
       setSlider("");
     }
@@ -27,8 +25,11 @@ export const Filters = ({openMenu, closeMenu}) => {
         <ul className="filters__menu">
           <li className="filter__nav--items">Clear all</li>
           <li className="filter__nav--items">Filters</li>
-          <li onClick={openMenu} className={`filter__nav--items ${closeMenu}`}>Close</li>
+          <li onClick={openMenu} className={`filter__nav--items`}>
+            Close
+          </li>
         </ul>
+        <div className="filter__ranger--slider">{slider}</div>
         <div className="filter__price">
           <p className="filter__price--price">Price</p>
           <img
@@ -37,10 +38,9 @@ export const Filters = ({openMenu, closeMenu}) => {
             className={`filter__price--img${menu}`}
             onClick={changePrice}
           />
-         
         </div>
-        <div className="filter__ranger--slider">{slider}</div>
       </div>
+     
     </div>
   );
 };

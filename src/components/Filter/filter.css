@@ -16,8 +16,8 @@
   display: flex;
   justify-content: space-between;
 }
-.filter__nav--items .close{
-  display: none;
+.filter__nav--items{
+  cursor: pointer;
 }
 
 .filter__price--imgclose {
