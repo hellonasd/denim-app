@@ -5,6 +5,7 @@ import "../Color/color.css";
 // style={{backgroundColor: it}
 
 export const Color = ({ color }) => {
+
   return (
     <React.Fragment>
       {color.map((it) => {

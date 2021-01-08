@@ -1,24 +1,37 @@
 import React from "react";
-
+import { Color } from "../Color/Color";
+import { colors } from '../../mock-data/mock-data.js';
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
-
+import {Title } from '../Title/Title.jsx';
 export const Filters = ({ openMenu }) => {
-  const [menu, setMenu] = React.useState("close");
+  const [priceMenu, setPriceMenu] = React.useState("close");
+  const [colorMenu, setColorMenu] = React.useState("close");
   const [slider, setSlider] = React.useState("");
-
+  const [colo, setColors] = React.useState('');
   React.useEffect(() => {
-    if (menu === "open") {
+    if (priceMenu === "open") {
       setSlider(<RangerSlider />);
-    } else {
-      setSlider("");
+      
+    }else{
+      setSlider('');
+    } 
+    if(colorMenu === 'open'){
+      setColors(<Color color={colors}/>)
+    }else {
+      setColors('');
     }
-  }, [menu]);
+
+    
+  }, [priceMenu, colorMenu]);
 
   function changePrice() {
-    setMenu(menu === "open" ? "close" : "open");
+    setPriceMenu(priceMenu === "open" ? "close" : "open");
   }
 
+  function changeColor() {
+    setColorMenu(colorMenu === "open" ? "close" : "open");
+  }
   return (
     <div className="filter">
       <div className="filter__wrapp">
@@ -29,16 +42,33 @@ export const Filters = ({ openMenu }) => {
             Close
           </li>
         </ul>
-        <div className="filter__ranger--slider">{slider}</div>
+        
         <div className="filter__price">
+        
+          
           <p className="filter__price--price">Price</p>
           <img
             src="../../img/up-down.svg"
             alt="open"
-            className={`filter__price--img${menu}`}
+            className={`filter__price--img${priceMenu}`}
             onClick={changePrice}
           />
+        
+      
         </div>
+        {slider}
+        <div className="filter__color">
+          <p className="filter__color--color">Color</p>
+          <img
+            src="../../img/up-down.svg"
+            alt="open"
+            className={`filter__color--img${colorMenu}`}
+            onClick={changeColor}
+          />
+           
+        </div>
+        
+        {colo}
       </div>
      
     </div>

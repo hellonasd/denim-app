@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Gallery } from "./components/Gallery/Gallery";
 import { Catalog } from "./components/Catalog/Catalog";
+import { Filters } from "./components/Filter/Filters";
 
 
 function App() {
@@ -23,9 +24,9 @@ function App() {
         <Route exact path="/product/:number">
           <Bestsellers titleName="You may also like" />
         </Route>
-        <Categories />
-        <Catalog />
-        
+        {/* <Categories />
+        <Catalog /> */}
+        <Filters />
       </Router>
     </div>
   );

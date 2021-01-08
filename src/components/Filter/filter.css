@@ -24,6 +24,17 @@
   transform: rotate(180deg);
 }
 
+.filter__color{
+  
+  border-top: 2px solid #F1F2F4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__color--imgclose{
+  transform: rotate(180deg);
+}
+
 .input--range {
   display: flex;
   justify-content: center;
@@ -33,3 +44,9 @@
   border-radius: 3px;
   outline: none;
 }
+
+
+/* .filter__ranger--slider{
+  position: relative;
+  z-index: -10;
+} */

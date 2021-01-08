@@ -141,3 +141,6 @@ export const catalogImg = [
     tableUrl : `../../img/catalogImg/catalog-jacket-9-mobile@2x.jpg`,
   },
 ]
+
+
+export const colors = ['#B0C3C7', '#3B6392', '#BFC3C8', ' #2D2E2E', ' #ECECEC', '#4193DA'];
