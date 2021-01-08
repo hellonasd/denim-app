@@ -3,12 +3,16 @@ import { Color } from "../Color/Color";
 import { colors } from '../../mock-data/mock-data.js';
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
-import {Title } from '../Title/Title.jsx';
+import { CollectionList } from "../collectionFilter/CollectionFilter";
+import { Btn } from "../Btn/Btn";
+
 export const Filters = ({ openMenu }) => {
   const [priceMenu, setPriceMenu] = React.useState("close");
   const [colorMenu, setColorMenu] = React.useState("close");
-  const [slider, setSlider] = React.useState("");
+  const [collectionMenu, setCollectionMenu] = React.useState('close');
+  const [slider, setSlider] = React.useState('');
   const [colo, setColors] = React.useState('');
+  const [collectionList, setCollectionList] = React.useState('');
   React.useEffect(() => {
     if (priceMenu === "open") {
       setSlider(<RangerSlider />);
@@ -22,8 +26,16 @@ export const Filters = ({ openMenu }) => {
       setColors('');
     }
 
+    if(collectionMenu === 'open'){
+      setCollectionList(
+        <CollectionList />
+      )
+    }else {
+      setCollectionList('');
+    }
+
     
-  }, [priceMenu, colorMenu]);
+  }, [priceMenu, colorMenu,collectionMenu]);
 
   function changePrice() {
     setPriceMenu(priceMenu === "open" ? "close" : "open");
@@ -31,6 +43,10 @@ export const Filters = ({ openMenu }) => {
 
   function changeColor() {
     setColorMenu(colorMenu === "open" ? "close" : "open");
+  }
+
+  function changeCollection(){
+    setCollectionMenu(collectionMenu === "open" ? "close" : "open");
   }
   return (
     <div className="filter">
@@ -69,6 +85,21 @@ export const Filters = ({ openMenu }) => {
         </div>
         
         {colo}
+        <div className="filter__collection">
+          <p className="filter__collection--color">Collection</p>
+          <img
+            src="../../img/up-down.svg"
+            alt="open"
+            className={`filter__colletion--img${collectionMenu}`}
+            onClick={changeCollection}
+          />
+           
+        </div>
+        {collectionList}
+
+        <div className='filter__btn-down'>
+          <Btn btnSubstring={'Apply(9 products)'} subClass='filter-btn'/>
+        </div>
       </div>
      
     </div>

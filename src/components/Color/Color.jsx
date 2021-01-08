@@ -10,7 +10,6 @@ export const Color = ({ color }) => {
     <React.Fragment>
       {color.map((it) => {
         return (
-          
             <label key={Math.random() * 10} className="radio">
               <input
                 key={Math.random() * 10}

@@ -31,3 +31,7 @@
   line-height: 19px;
   color: #ffffff;
 }
+
+.btn.filter-btn{
+  padding: 27px 71px;
+}

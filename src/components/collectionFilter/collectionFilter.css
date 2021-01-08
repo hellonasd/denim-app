@@ -1,0 +1,28 @@
+.collection {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  
+}
+
+.collection-item.active {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+ 
+
+  color: #151c22;
+}
+
+.collection-item {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #727a82;
+}

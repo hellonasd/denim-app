@@ -30,9 +30,23 @@
   display: flex;
   justify-content: space-between;
 }
+.filter__collection{
+  border-top: 2px solid #F1F2F4;
+  display: flex;
+  justify-content: space-between;
+}
 
 .filter__color--imgclose{
   transform: rotate(180deg);
+}
+
+.filter__colletion--imgclose{
+  transform: rotate(180deg);
+}
+
+.filter__btn-down{
+  border-top: 2px solid #F1F2F4;
+  padding-top: 100px;
 }
 
 .input--range {
@@ -45,8 +59,3 @@
   outline: none;
 }
 
-
-/* .filter__ranger--slider{
-  position: relative;
-  z-index: -10;
-} */
