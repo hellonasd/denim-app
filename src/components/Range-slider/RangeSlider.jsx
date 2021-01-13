@@ -86,6 +86,7 @@ export const RangerSlider = () => {
           <div className="track"></div>
           <div ref={sliderRef} className="ranger"></div>
         </div>
+        <div className='ranger-wrapper-price'>
         <p
           style={{ left: `${positionLeft}%` }}
           className="ranger__slider-price-left"
@@ -98,6 +99,7 @@ export const RangerSlider = () => {
         >
           $ {valueRight}
         </p>
+        </div>
       </div>
     </div>
   );

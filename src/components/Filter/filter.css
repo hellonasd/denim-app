@@ -59,3 +59,39 @@
   outline: none;
 }
 
+@media(min-width: 768px){
+  .filter {
+    width: 206px;
+    position: absolute;
+    right: 194px;
+    margin: 0 0 0 auto;
+    
+    background-color :#FFFFFF;
+  }
+
+  .filter__wrapp{
+    border: 2px solid #151C22;
+  }
+
+  .filter__price--price{
+    padding-left: 15px;
+  }
+  .filter__color--color{
+    padding-left: 15px;
+  }
+  .filter__collection--color{
+    padding-left: 15px;
+  }
+  .filter__price--imgclose{
+    padding-left: 15px;
+  }
+  .filter__color--imgclose,
+  .filter__color--imgopen{
+    padding-right: 15px;
+  }
+  .filter__colletion--imgclose,
+  .filter__colletion--imgopen
+  {
+    padding-right: 15px;
+  }
+}

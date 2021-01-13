@@ -11,7 +11,7 @@
   text-align: center;
   padding-bottom: 30px;
 }
-.catalog__btn{
+.catalog__btn {
   background-color: #ffffff;
   margin: 0 auto;
   width: 290px;
@@ -20,10 +20,9 @@
   align-items: center;
   display: flex;
   border: 2px solid #151c22;
-  
 }
 
-.catalog__btn.open{
+.catalog__btn.open {
   background-color: #ffffff;
   margin: 0 auto;
   width: 290px;
@@ -68,16 +67,15 @@
 .catalog__items-item {
   padding: 10px;
 }
-.catalog__items-img {
+/* .catalog__items-img {
   width: 130px;
   height: 160px;
-}
+} */
 .catalog__items-img.big {
-  width: 290px;
-  height: 442px;
+  height: 672px;
 }
 
-.catalog__items-name{
+.catalog__items-name {
   padding-top: 10px;
   font-family: Work Sans;
   font-style: normal;
@@ -87,7 +85,7 @@
   margin: 0;
   color: #151c22;
 }
-.catalog__items-price{
+.catalog__items-price {
   font-family: Work Sans;
   font-weight: bold;
   font-weight: 500;
@@ -103,14 +101,53 @@
     margin: 0 auto;
   }
   .catalog__wrapper {
-    width: 768px;
+    width: 705px;
   }
   .catalog__items {
-    padding-top: 40px;
-    /* margin: 0 auto; */
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 239px 242px 217px;
+    grid-template-rows: 388px 387px 9px 213px 300px;
+  }
+
+  .catalog__items figure:nth-child(5) {
+    grid-column-start: 2;
+    height: 50px;
+    width: 50px;
+    grid-row: 1;
+    /* grid-row: -6; */
+  }
+  .catalog__items figure:nth-child(6) {
+    grid-column: 2;
+    grid-row: 3 / -7;
+  }
+  .catalog__items figure:nth-child(7) {
+    grid-column: 3;
+    grid-row: 3 / -7;
+  }
+
+  .catalog__btn {
+    /* padding-right: 50px; */
+    background-color: #ffffff;
+    margin: 0 0 0 auto;
+
+    width: 206px;
+    height: 50px;
+    position: relative;
+    align-items: center;
+
+    border: 2px solid #151c22;
+    cursor: pointer;
+  }
+  .catalog__wrapper {
+    width: 439px;
+    margin: 0 auto;
+  }
+  .catalog__items-img {
+    width: 206px;
+    height: 279px;
+  }
+  .catalog__items-img.big {
+    width: 442px;
+    height: 672px;
   }
 }

@@ -24,9 +24,9 @@ function App() {
         <Route exact path="/product/:number">
           <Bestsellers titleName="You may also like" />
         </Route>
-        {/* <Categories />
-        <Catalog /> */}
-        <Filters />
+        <Categories />
+        <Catalog /> 
+        {/* <Filters />  */}
       </Router>
     </div>
   );

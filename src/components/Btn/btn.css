@@ -35,3 +35,9 @@
 .btn.filter-btn{
   padding: 27px 71px;
 }
+
+@media(min-width: 768px){
+  .btn.filter-btn{
+    padding: 18px 23px;
+  }
+}

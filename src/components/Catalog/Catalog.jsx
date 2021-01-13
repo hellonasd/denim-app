@@ -40,7 +40,10 @@ export const Catalog = ({ suBclass }) => {
             {catalogImg.map((it, i)=> {
               return (
               <figure key={i} className='catalog__items-item' >
-                <img className={`catalog__items-img ${it.big}`} src={it.mobileUrl} alt={it.name}/>
+                <picture>
+                  <source media="(min-width:768px)" srcSet={it.tableUrl} />
+                  <img className={`catalog__items-img ${it.big}`} src={it.mobileUrl} alt={it.name}/>
+                </picture>
                 <figcaption>
                   <p className='catalog__items-name'>
                   {it.name}
