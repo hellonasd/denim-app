@@ -35,7 +35,7 @@ export const Catalog = ({ suBclass }) => {
           <p className="catalog__btn-name">Filter by</p>
           <img className="catalog__btn-img" src="../../img/btn-open.svg" />
         </button>
-        <div>{expanded}</div>
+        {expanded}
         <div className="catalog__items">
             {catalogImg.map((it, i)=> {
               return (

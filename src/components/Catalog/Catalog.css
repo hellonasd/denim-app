@@ -102,11 +102,12 @@
   }
   .catalog__wrapper {
     width: 705px;
+    position: relative;
   }
   .catalog__items {
     display: grid;
     grid-template-columns: 239px 242px 217px;
-    grid-template-rows: 388px 387px 9px 213px 300px;
+    grid-template-rows: 390px 362px 9px 73px 298px;
   }
 
   .catalog__items figure:nth-child(5) {
@@ -138,10 +139,7 @@
     border: 2px solid #151c22;
     cursor: pointer;
   }
-  .catalog__wrapper {
-    width: 439px;
-    margin: 0 auto;
-  }
+  
   .catalog__items-img {
     width: 206px;
     height: 279px;

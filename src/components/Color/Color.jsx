@@ -10,6 +10,7 @@ export const Color = ({ color }) => {
     <React.Fragment>
       {color.map((it) => {
         return (
+          <div className='radio--color-main'>
             <label key={Math.random() * 10} className="radio">
               <input
                 key={Math.random() * 10}
@@ -20,14 +21,14 @@ export const Color = ({ color }) => {
               <div
                 key={Math.random() * 10}
                 className="radio--radio"
-                style={{ border: `2px solid ${it}` }}
-              ></div>
-              <span
-                className="radio__active"
                 style={{ backgroundColor: `${it}` }}
+                ></div>
+              <span
+                style={{ border: `2px solid ${it}` }}
+                className="radio__active"
               ></span>
             </label>
-          
+            </div>
         );
       })}
     </React.Fragment>

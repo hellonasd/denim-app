@@ -26,3 +26,24 @@
 
   color: #727a82;
 }
+
+@media(min-width: 768px){
+  .collection{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 187px;
+  }
+  .collection-item {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 30px;
+    
+    color: #727a82;
+  }
+  .collection:nth-child(2n){
+    padding-bottom: 20px;
+  }
+}
