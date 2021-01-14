@@ -13,6 +13,8 @@ export const RangerSlider = () => {
     ((valueRight - 0) / (240 - 0)) * 100
   );
 
+  
+
   const btnLeft = React.useRef(null);
   const btnRight = React.useRef(null);
   const sliderRef = React.useRef(null);
@@ -85,20 +87,20 @@ export const RangerSlider = () => {
         <div className="slider">
           <div className="track"></div>
           <div ref={sliderRef} className="ranger"></div>
-        </div>
-        <div className='ranger-wrapper-price'>
-        <p
-          style={{ left: `${positionLeft}%` }}
-          className="ranger__slider-price-left"
-        >
-          $ {valueLeft}
-        </p>
-        <p
-          style={{ left: `${positionRight}%` }}
-          className="ranger__slider-price-right"
-        >
-          $ {valueRight}
-        </p>
+          <div className="ranger-wrapper-price">
+            <p
+              style={{ left: `${positionLeft - 5}%` }}
+              className="ranger__slider-price-left"
+            >
+              $ {valueLeft}
+            </p>
+            <p
+              style={{ left: `${positionRight - 15}%` }}
+              className="ranger__slider-price-right"
+            >
+              $ {valueRight}
+            </p>
+          </div>
         </div>
       </div>
     </div>

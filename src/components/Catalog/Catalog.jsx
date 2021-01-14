@@ -33,7 +33,7 @@ export const Catalog = ({ suBclass }) => {
         <span className="catalog__name">/ Jackets</span>
         <button onClick={openMenu} className={`catalog__btn ${menu}`}>
           <p className="catalog__btn-name">Filter by</p>
-          <img className="catalog__btn-img" src="../../img/btn-open.svg" />
+          <img className={`catalog__btn-img ${menu}`} src="../../img/btn-open.svg" alt='filter-menu' />
         </button>
         {expanded}
         <div className="catalog__items">

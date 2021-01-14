@@ -1,51 +1,68 @@
 .filter {
-  width: 320px;
+  width: 290px;
   margin: 0 auto;
+  border: 2px solid #151c22;
+  background-color: #ffffff;
 }
 
 .filters__menu {
+  margin: 0;
   border-bottom: 2px solid #f1f2f4;
-  padding: 0px;
+  padding: 0px 15px;
   height: 45px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter__price {
   display: flex;
   justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.filter__nav--items{
+.filter__nav--items {
   cursor: pointer;
+}
+
+.filter__nav--items.active {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .filter__price--imgclose {
   transform: rotate(180deg);
 }
 
-.filter__color{
-  
-  border-top: 2px solid #F1F2F4;
+.filter__color {
+  border-top: 2px solid #f1f2f4;
   display: flex;
   justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.filter__collection{
-  border-top: 2px solid #F1F2F4;
+.filter__collection {
+  border-top: 2px solid #f1f2f4;
   display: flex;
   justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.filter__color--imgclose{
+.filter__color--imgclose {
   transform: rotate(180deg);
 }
 
-.filter__colletion--imgclose{
+.filter__colletion--imgclose {
   transform: rotate(180deg);
 }
 
-.filter__btn-down{
-  border-top: 2px solid #F1F2F4;
+.filter__btn-down {
+  border-top: 2px solid #f1f2f4;
   padding-top: 100px;
 }
 
@@ -59,38 +76,36 @@
   outline: none;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .filter {
     width: 206px;
     position: absolute;
     right: 5px;
     margin: 0 0 0 auto;
-    
-    background-color :#FFFFFF;
+
+    background-color: #ffffff;
   }
 
-  .filter__wrapp{
-    border: 2px solid #151C22;
+  .filter__wrapp {
+    border: 2px solid #151c22;
   }
 
-  .filter__price--price{
+  .filter__price--price {
     padding-left: 15px;
   }
-  .filter__color--color{
+  .filter__color--color {
     padding-left: 15px;
   }
-  .filter__collection--color{
+  .filter__collection--color {
     padding-left: 15px;
   }
-  .filter__price{
+  .filter__price {
     padding-right: 15px;
   }
-  .filter__color{
+  .filter__color {
     padding-right: 15px;
   }
-  .filter__collection{
+  .filter__collection {
     padding-right: 15px;
   }
-  
-  
 }

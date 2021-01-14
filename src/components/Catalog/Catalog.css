@@ -14,7 +14,7 @@
 .catalog__btn {
   background-color: #ffffff;
   margin: 0 auto;
-  width: 290px;
+  width: 294px;
   height: 47px;
   position: relative;
   align-items: center;
@@ -22,16 +22,9 @@
   border: 2px solid #151c22;
 }
 
-.catalog__btn.open {
-  background-color: #ffffff;
-  margin: 0 auto;
-  width: 290px;
-  height: 47px;
-  position: relative;
-  align-items: center;
-  display: flex;
-  border: 2px solid #151c22;
-  display: none;
+
+.catalog__btn-img.open{
+  transform: rotate(180deg);
 }
 
 .catalog__btn-name {

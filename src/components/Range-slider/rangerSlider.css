@@ -1,5 +1,6 @@
 .range {
-  width: 290px;
+  /* width: 290px; */
+  width: 259px;
   margin: 0 auto;
   position: relative;
   top: 7px;
@@ -9,16 +10,21 @@
   position: relative;
   z-index: 1;
   height: 5px;
-  margin: 0 15px;
+  /* margin: 0 15px; */
   top: 0px;
   left: 0px;
-  width: 290px;
+  /* width: 261px; */
+  /* width: 259px; */
+  width: 253px;
 }
 .slider > .track {
   position: absolute;
   z-index: 1;
-  left: -17px;
-  right: -1px;
+  /* left: -1px;
+  right: -1px; */
+  left: 0px;
+  /* right: 15px; */
+  right: 8px;
   top: 0;
   bottom: 0;
   border-radius: 5px;
@@ -27,8 +33,10 @@
 .slider > .ranger {
   position: absolute;
   z-index: 1;
-  left: 2%;
-  right: 78%;
+  /* left: 2%;
+  right: 78%; */
+  left: 9%;
+  right: 72%;
   top: 0;
   bottom: 0;
   border-radius: 5px;
@@ -46,7 +54,8 @@
 
 .btn-wrapp {
   position: relative;
-  width: 290px;
+  /* width: 259px; */
+  width: 237px;
   top: 58px;
 }
 
@@ -82,13 +91,22 @@
   margin: 0;
 }
 
+/* .ranger-wrapper-price{
+  
+  
+  
+} */
+
 input[type="range"] {
   position: absolute;
   pointer-events: none;
   -webkit-appearance: none;
   z-index: 4;
   height: 10px;
-  width: 307px;
+  /* width: 285px;
+  top: 25px;
+  left: 0px; */
+  width: 259px;
   top: 0px;
   left: 0px;
   opacity: 0;
@@ -145,17 +163,19 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 1;
     left: -4%;
     right: 76%;
+
     top: 0;
     bottom: 0;
     border-radius: 5px;
     background-color: black;
   }
- 
+
   .slider > .track {
     position: absolute;
     z-index: 1;
     left: -17px;
-    right: 13px;
+    /* right: 13px; */
+    right: 4px;
     top: 0;
     bottom: 0;
     border-radius: 5px;

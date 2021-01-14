@@ -53,7 +53,7 @@ export const Filters = ({ openMenu }) => {
       <div className="filter__wrapp">
         <ul className="filters__menu">
           <li className="filter__nav--items">Clear all</li>
-          <li className="filter__nav--items">Filters</li>
+          <li className="filter__nav--items active">Filters</li>
           <li onClick={openMenu} className={`filter__nav--items`}>
             Close
           </li>
