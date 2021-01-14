@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Color } from "../Color/Color";
-import { colors } from '../../mock-data/mock-data.js';
+import { colors } from "../../mock-data/mock-data.js";
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
 import { CollectionList } from "../collectionFilter/CollectionFilter";
@@ -10,35 +10,28 @@ import { Cleaning } from "../Filter-cleaning/Cleaning";
 export const Filters = ({ openMenu }) => {
   const [priceMenu, setPriceMenu] = React.useState("close");
   const [colorMenu, setColorMenu] = React.useState("close");
-  const [collectionMenu, setCollectionMenu] = React.useState('close');
-  const [slider, setSlider] = React.useState('');
-  const [colo, setColors] = React.useState('');
-  const [collectionList, setCollectionList] = React.useState('');
-  
-  
+  const [collectionMenu, setCollectionMenu] = React.useState("close");
+  const [slider, setSlider] = React.useState("");
+  const [colo, setColors] = React.useState("");
+  const [collectionList, setCollectionList] = React.useState("");
   React.useEffect(() => {
     if (priceMenu === "open") {
       setSlider(<RangerSlider />);
-      
-    }else{
-      setSlider('');
-    } 
-    if(colorMenu === 'open'){
-      setColors(<Color color={colors}/>)
-    }else {
-      setColors('');
+    } else {
+      setSlider("");
+    }
+    if (colorMenu === "open") {
+      setColors(<Color color={colors} />);
+    } else {
+      setColors("");
     }
 
-    if(collectionMenu === 'open'){
-      setCollectionList(
-        <CollectionList />
-      )
-    }else {
-      setCollectionList('');
+    if (collectionMenu === "open") {
+      setCollectionList(<CollectionList />);
+    } else {
+      setCollectionList("");
     }
-
-    
-  }, [priceMenu, colorMenu,collectionMenu]);
+  }, [priceMenu, colorMenu, collectionMenu]);
 
   function changePrice() {
     setPriceMenu(priceMenu === "open" ? "close" : "open");
@@ -48,17 +41,14 @@ export const Filters = ({ openMenu }) => {
     setColorMenu(colorMenu === "open" ? "close" : "open");
   }
 
-  function changeCollection(){
+  function changeCollection() {
     setCollectionMenu(collectionMenu === "open" ? "close" : "open");
   }
   return (
     <div className="filter">
       <div className="filter__wrapp">
-        
         <Cleaning />
         <div className="filter__price">
-        
-          
           <p className="filter__price--price">Price</p>
           <img
             src="../../img/up-down.svg"
@@ -66,8 +56,6 @@ export const Filters = ({ openMenu }) => {
             className={`filter__price--img${priceMenu}`}
             onClick={changePrice}
           />
-        
-      
         </div>
         {slider}
         <div className="filter__color">
@@ -78,9 +66,8 @@ export const Filters = ({ openMenu }) => {
             className={`filter__color--img${colorMenu}`}
             onClick={changeColor}
           />
-           
         </div>
-        
+
         {colo}
         <div className="filter__collection">
           <p className="filter__collection--color">Collection</p>
@@ -90,15 +77,15 @@ export const Filters = ({ openMenu }) => {
             className={`filter__colletion--img${collectionMenu}`}
             onClick={changeCollection}
           />
-           
         </div>
         {collectionList}
-        <div className='filter__btn-down'>
-          <Btn btnSubstring={'Apply(9 products)'} subClass='filter-btn'/>
+        <div className="filter__btn-down">
+          <Btn btnSubstring={"Apply(9 products)"} subClass="filter-btn" />
         </div>
-       
+        <div className={`filter__menu-wrapp`}>
+          <p className='filter__menu-clear' >Clear All</p>
+        </div>
       </div>
-     
     </div>
   );
 };

@@ -32,12 +32,23 @@
   color: #ffffff;
 }
 
-
-.btn.filter-btn{
+.btn.filter-btn {
   margin: 0 auto;
   display: block;
   padding: 27px 56px;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
+  .btn.filter-btn {
+    width: 100%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

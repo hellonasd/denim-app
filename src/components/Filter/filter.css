@@ -3,7 +3,6 @@
   margin: 0 auto;
   border: 2px solid #151c22;
   background-color: #ffffff;
-
 }
 
 .filter__price {
@@ -55,6 +54,10 @@
   border-radius: 3px;
   outline: none;
 }
+.filter__menu-wrapp {
+  display: none;
+  margin: 0;
+}
 
 @media (min-width: 768px) {
   .filter {
@@ -66,7 +69,19 @@
     background-color: #ffffff;
   }
 
-  
+  .filter__menu-wrapp {
+    display: block;
+    text-align: center;
+  }
+  .filter__menu-clear {
+    margin: 0;
+    padding-bottom: 25px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
 
   .filter__price--price {
     padding-left: 15px;
@@ -86,5 +101,4 @@
   .filter__collection {
     padding-right: 15px;
   }
-  
 }
