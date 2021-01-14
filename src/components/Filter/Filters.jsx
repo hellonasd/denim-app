@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Color } from "../Color/Color";
 import { colors } from '../../mock-data/mock-data.js';
 import "../Filter/filter.css";
 import { RangerSlider } from "../Range-slider/RangeSlider";
 import { CollectionList } from "../collectionFilter/CollectionFilter";
 import { Btn } from "../Btn/Btn";
+import { Cleaning } from "../Filter-cleaning/Cleaning";
 
 export const Filters = ({ openMenu }) => {
   const [priceMenu, setPriceMenu] = React.useState("close");
@@ -13,6 +14,8 @@ export const Filters = ({ openMenu }) => {
   const [slider, setSlider] = React.useState('');
   const [colo, setColors] = React.useState('');
   const [collectionList, setCollectionList] = React.useState('');
+  
+  
   React.useEffect(() => {
     if (priceMenu === "open") {
       setSlider(<RangerSlider />);
@@ -51,14 +54,8 @@ export const Filters = ({ openMenu }) => {
   return (
     <div className="filter">
       <div className="filter__wrapp">
-        <ul className="filters__menu">
-          <li className="filter__nav--items">Clear all</li>
-          <li className="filter__nav--items active">Filters</li>
-          <li onClick={openMenu} className={`filter__nav--items`}>
-            Close
-          </li>
-        </ul>
         
+        <Cleaning />
         <div className="filter__price">
         
           
@@ -96,10 +93,10 @@ export const Filters = ({ openMenu }) => {
            
         </div>
         {collectionList}
-
         <div className='filter__btn-down'>
           <Btn btnSubstring={'Apply(9 products)'} subClass='filter-btn'/>
         </div>
+       
       </div>
      
     </div>

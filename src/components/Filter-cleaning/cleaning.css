@@ -1,0 +1,28 @@
+.cleaning {
+  margin: 0;
+  padding: 0px 15px;
+  display: flex;
+  list-style: none;
+  border-bottom: 2px solid #f1f2f4;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cleaning-item.filters-all {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+@media(min-width: 768px){
+  
+}
