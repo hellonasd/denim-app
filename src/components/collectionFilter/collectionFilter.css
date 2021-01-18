@@ -1,9 +1,11 @@
 .collection {
+  cursor: pointer;
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 .collection-item.active {
@@ -43,7 +45,7 @@
     
     color: #727a82;
   }
-  .collection:nth-child(2n){
+  .collection li:nth-child(1){
     padding-bottom: 20px;
   }
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import "../Range-slider/rangerSlider.css";
 
-export const RangerSlider = () => {
-  const [valueLeft, setValueLeft] = React.useState(10);
-  const [valueRight, setValueRight] = React.useState(60);
+export const RangerSlider = ({min, max}) => {
+  const [valueLeft, setValueLeft] = React.useState(min);
+  const [valueRight, setValueRight] = React.useState(max);
 
   const [positionLeft, setPositionLeft] = React.useState(
     ((valueLeft - 0) / (240 - 0)) * 100
