@@ -18,25 +18,26 @@ export const Filters = () => {
   const [collectionList, setCollectionList] = React.useState("");
   const [menu, setMenu] = React.useState("close");
   const [array, setArray] = React.useState([]);
+  const [colorTest, setColorFilter] = React.useState();
   const openMenu = () => {
     setMenu(menu === "open" ? "close" : "open");
   };
-
+  let colorFilter;
+  const rgbToHex = (rgb) =>
+    "#" +
+    (
+      (1 << 24) +
+      (Number(rgb.match(/\d{1,3}/gi)[0]) << 16) +
+      (Number(rgb.match(/\d{1,3}/gi)[1]) << 8) +
+      Number(rgb.match(/\d{1,3}/gi)[2])
+    )
+      .toString(16)
+      .slice(1);
   function find(event) {
     catalogImg.forEach((it, i) => {
-      const rgbToHex = (rgb) =>
-        "#" +
-        (
-          (1 << 24) +
-          (Number(rgb.match(/\d{1,3}/gi)[0]) << 16) +
-          (Number(rgb.match(/\d{1,3}/gi)[1]) << 8) +
-          Number(rgb.match(/\d{1,3}/gi)[2])
-        )
-          .toString(16)
-          .slice(1);
-      let r = rgbToHex(event.target.style.backgroundColor).toUpperCase();
-      
-      if (it.colors === r) {
+      colorFilter = rgbToHex(event.target.style.backgroundColor).toUpperCase();
+      setColorFilter(colorFilter);
+      if (it.colors === colorFilter) {
         array.push(it);
         let noMathces = array.filter(
           (e, i, ar) => ar.findIndex((elem) => e.id === elem.id) === i
@@ -45,8 +46,7 @@ export const Filters = () => {
       }
 
       array.filter((e, i, are) => {
-        
-        if (e.colors !== r) {
+        if (e.colors !== colorFilter) {
           setArray(array.splice(0, array.length - 1));
         }
       });
@@ -54,24 +54,28 @@ export const Filters = () => {
   }
 
   function filterModelItems(event) {
-    
+    let colorModel = [];
     let ClothingModel = event.target.innerHTML;
-    catalogImg.forEach((el, i)=> {
-      if(el.model === ClothingModel){
-        
+    catalogImg.forEach((el, i, a) => {
+      if (el.model === ClothingModel) {
         array.push(el);
         let noMathces = array.filter(
           (e, i, ar) => ar.findIndex((elem) => e.id === elem.id) === i
         );
         setArray(noMathces);
       }
+
+      if (el.model === ClothingModel && colorTest === el.colors) {
+        colorModel.push(el);
+
+        setArray(colorModel);
+      }
       array.filter((e, i, are) => {
-        
         if (e.model !== ClothingModel) {
           setArray(array.splice(0, array.length - 1));
         }
       });
-    })
+    });
   }
 
   React.useEffect(() => {
@@ -91,7 +95,7 @@ export const Filters = () => {
     } else {
       setCollectionList("");
     }
-  }, [priceMenu, colorMenu, collectionMenu, menu, array]);
+  }, [priceMenu, colorMenu, collectionMenu, menu, array, colorTest]);
 
   function changePrice() {
     setPriceMenu(priceMenu === "open" ? "close" : "open");
