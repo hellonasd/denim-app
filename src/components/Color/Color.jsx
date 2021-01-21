@@ -3,7 +3,7 @@ import React from "react";
 import "../Color/color.css";
 
 export const Color = ({ color, find, isActive }) => {
-  const [colorId, setColorId] = React.useState('');
+  const [colorPick, setColorPick] = React.useState('');
   return (
     <React.Fragment>
       <div className="color-main">
@@ -16,12 +16,12 @@ export const Color = ({ color, find, isActive }) => {
               style={{ backgroundColor: `${it}` }}
               >
                 <input
-                id={i} 
+                
                 type="radio" 
                 className="radio-inpute" 
                 name="radio"
-                checked={it === colorId}
-                onChange={(event)=>find(event, setColorId, it)}
+                checked={it === colorPick}
+                onChange={(event)=>find(event, setColorPick, it)}
                 />
                 <div
                   className="checkmark"

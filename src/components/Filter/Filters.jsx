@@ -18,15 +18,15 @@ export const Filters = () => {
   const [collectionList, setCollectionList] = React.useState("");
   const [menu, setMenu] = React.useState("close");
   const [array, setArray] = React.useState([]);
-  const [colorTest, setColorFilter] = React.useState();
-
+  const [colorOfModel, setColorOfModel] = React.useState();
   const openMenu = () => {
     setMenu(menu === "open" ? "close" : "open");
   };
-  function find(event, setColorId, it) {
+  function find(event, setColorPick, it) {
     let colorPick = it;
+    setColorOfModel(it)
     catalogImg.forEach((it, i) => {
-      setColorId(colorPick);
+      setColorPick(colorPick);
 
       if (it.colors === colorPick) {
         array.push(it);
@@ -55,13 +55,14 @@ export const Filters = () => {
         );
         setArray(noMathces);
       }
-
-      if (el.model === ClothingModel && colorTest === el.colors) {
+      
+      console.log('it is color',colorOfModel);
+      if (el.model === ClothingModel && colorOfModel === el.colors) {
+        console.log(el);
         colorModel.push(el);
         setArray(colorModel);
       }
       array.filter((e, i, are) => {
-        console.log(e);
         if (e.model !== ClothingModel) {
           setArray(array.splice(0, array.length - 1));
         }
@@ -86,7 +87,7 @@ export const Filters = () => {
     } else {
       setCollectionList("");
     }
-  }, [priceMenu, colorMenu, collectionMenu, menu, array, colorTest]);
+  }, [priceMenu, colorMenu, collectionMenu, menu, array, colorOfModel]);
 
   function changePrice() {
     setPriceMenu(priceMenu === "open" ? "close" : "open");
