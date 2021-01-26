@@ -1,5 +1,4 @@
-
-.color-main{
+.color-main {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,7 +7,7 @@
   margin-left: 5px;
 }
 
-.radio{
+.radio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,17 +16,30 @@
   border-radius: 100%;
 }
 
-.radio input{
+.radio input {
   display: none;
 }
 
-.radio .checkmark{
+.radio .checkmark {
   width: 29px;
   height: 25px;
   border-radius: 100%;
   display: none;
-
 }
-.radio input:checked + .checkmark{
+.radio input:checked + .checkmark {
   display: inline-table;
+}
+
+@media (min-width: 768px) {
+  .color-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 151px;
+    margin-bottom: 10px;
+  }
+  .color-main-wrapp {
+    width: 26px;
+
+    padding: 10px;
+  }
 }

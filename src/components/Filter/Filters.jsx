@@ -19,14 +19,24 @@ export const Filters = () => {
   const [menu, setMenu] = React.useState("close");
   const [array, setArray] = React.useState([]);
   const [colorOfModel, setColorOfModel] = React.useState();
+  const [isActive, setIsActive] = React.useState({
+    activeObject : null,
+    objects : [{id : 1}, {id : 2}, {id : 3},{id : 4}]
+  });
+
+
   const openMenu = () => {
     setMenu(menu === "open" ? "close" : "open");
   };
   function find(event, setColorPick, it) {
     let colorPick = it;
-    setColorOfModel(it)
+    setColorOfModel(it);
+
+    
+
     catalogImg.forEach((it, i) => {
       setColorPick(colorPick);
+
 
       if (it.colors === colorPick) {
         array.push(it);
@@ -47,18 +57,28 @@ export const Filters = () => {
   function filterModelItems(event) {
     let colorModel = [];
     let ClothingModel = event.target.innerHTML;
+
+
+    function toggleClass(index) {
+      console.log(index);
+      
+      setIsActive({...isActive, activeObject : isActive.objects[index]});
+    }
+    
+    console.log(isActive);
     catalogImg.forEach((el, i, a) => {
+      
+      toggleClass(i);
       if (el.model === ClothingModel) {
         array.push(el);
+
         let noMathces = array.filter(
           (e, i, ar) => ar.findIndex((elem) => e.id === elem.id) === i
         );
         setArray(noMathces);
       }
-      
-      console.log('it is color',colorOfModel);
+
       if (el.model === ClothingModel && colorOfModel === el.colors) {
-        console.log(el);
         colorModel.push(el);
         setArray(colorModel);
       }
@@ -69,6 +89,9 @@ export const Filters = () => {
       });
     });
   }
+
+  
+
 
   React.useEffect(() => {
     if (priceMenu === "open") {
@@ -83,11 +106,24 @@ export const Filters = () => {
     }
 
     if (collectionMenu === "open") {
-      setCollectionList(<CollectionList filterModelItems={filterModelItems} />);
+      setCollectionList(
+        <CollectionList
+          isActive={isActive}
+          filterModelItems={filterModelItems}
+        />
+      );
     } else {
       setCollectionList("");
     }
-  }, [priceMenu, colorMenu, collectionMenu, menu, array, colorOfModel]);
+  }, [
+    priceMenu,
+    colorMenu,
+    collectionMenu,
+    menu,
+    array,
+    colorOfModel,
+    isActive,
+  ]);
 
   function changePrice() {
     setPriceMenu(priceMenu === "open" ? "close" : "open");

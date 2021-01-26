@@ -2,8 +2,9 @@ import React from "react";
 
 import "../Color/color.css";
 
-export const Color = ({ color, find, isActive }) => {
+export const Color = ({ color, find}) => {
   const [colorPick, setColorPick] = React.useState('');
+ 
   return (
     <React.Fragment>
       <div className="color-main">

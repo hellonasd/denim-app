@@ -140,23 +140,6 @@
     line-height: 16px;
   }
 
-  .filter__price--price {
-    padding-left: 15px;
-  }
-  .filter__color--color {
-    padding-left: 15px;
-  }
-  .filter__collection--color {
-    padding-left: 15px;
-  }
-  .filter__price {
-    padding-right: 15px;
-  }
-  .filter__color {
-    padding-right: 15px;
-  }
-  .filter__collection {
-    padding-right: 15px;
-  }
+  
 }
 

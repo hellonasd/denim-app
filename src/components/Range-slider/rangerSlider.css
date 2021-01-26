@@ -128,7 +128,7 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     z-index: 4;
     height: 10px;
-    width: 201px;
+    width: 169px;
     top: 0px;
     left: 0px;
     opacity: 0;
@@ -141,11 +141,11 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0 15px;
     top: 0px;
     left: 0px;
-    width: 178px;
+    width: 143px;
   }
 
   .range {
-    width: 201px;
+    width: 145px;
     margin: 0 auto;
     position: relative;
     top: 7px;
@@ -154,7 +154,7 @@ input[type="range"]::-webkit-slider-thumb {
 
   .btn-wrapp {
     position: relative;
-    width: 178px;
+    width: 146px;
     top: 58px;
   }
 
@@ -173,9 +173,8 @@ input[type="range"]::-webkit-slider-thumb {
   .slider > .track {
     position: absolute;
     z-index: 1;
-    left: -17px;
-    /* right: 13px; */
-    right: 4px;
+    left: -12px;
+    right: 0px;
     top: 0;
     bottom: 0;
     border-radius: 5px;
